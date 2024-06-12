@@ -54,15 +54,17 @@ main {
 .timeline-item {
     display: flex;
     margin-bottom: 20px;
+    align-items: flex-start;
 }
 
 .timeline-year {
-    width: 100px;
+    width: 80px;
     font-weight: bold;
     font-size: 1.2em;
     text-align: center;
     border-right: 2px solid #dddddd;
     padding-right: 20px;
+    flex-shrink: 0;
 }
 
 .timeline-content {
@@ -71,16 +73,14 @@ main {
 }
 
 .timeline-content img {
-    width: 50px;
-    height: 50px;
-    vertical-align: middle;
-    margin-right: 10px;
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .timeline-content p {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
+    margin: 10px 0;
 }
 
 .timeline-content a {
@@ -101,9 +101,4 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-.timeline-content .wide-image {
-    width: 200px;
-    height: auto;
 }
